@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html title="Marketing 360 | Equipe Conecta" lang="pt-BR">
       <body
         style={{
           backgroundColor: "#f2f2f2",

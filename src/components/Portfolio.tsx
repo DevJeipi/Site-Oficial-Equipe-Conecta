@@ -56,7 +56,7 @@ const portfolioItems: PortfolioItem[] = [
 
 export default function Portfolio() {
   return (
-    <section className="w-full py-20 bg-white overflow-hidden">
+    <section id="portfolio" className="w-full py-20 overflow-hidden">
       <div className="container mx-auto flex flex-col gap-10">
         {/* Header stays the same */}
         <div className="font-unbounded flex flex-col items-start justify-start gap-2 w-full">
