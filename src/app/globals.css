@@ -47,3 +47,13 @@
 .animate-infinite-scroll:hover .animate-scroll-content {
   animation-play-state: paused;
 }
+
+/* Custom Swiper Styles */
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet-active {
+  width: 2rem !important;
+}

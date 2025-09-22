@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Mini from "@/components/Mini";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Mini />
       <Services />
       <Method />
+      <Portfolio />
     </main>
   );
 }

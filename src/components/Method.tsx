@@ -61,7 +61,7 @@ export default function Method() {
       <motion.div
         className="hidden md:block absolute top-10 right-10"
         animate={{
-          y: [0, -10, 0],
+          y: [0, -15, 0],
         }}
         transition={{
           duration: 2,
