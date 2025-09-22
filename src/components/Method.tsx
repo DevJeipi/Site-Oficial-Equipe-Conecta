@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Method() {
   const steps = [
@@ -30,12 +31,52 @@ export default function Method() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-b from-primary to-[#072842] py-24 overflow-hidden">
+    <section className="relative rounded-4xl bg-gradient-to-b from-primary to-[#072842] py-24 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
       </div>
+
+      <motion.div
+        className="absolute -bottom-15 -left-15"
+        animate={{
+          y: [0, -10, 0],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <Image
+          src="/symbol-conecta-wtbg-white-transformed.webp"
+          alt="Logo Equipe Conecta"
+          width={345}
+          height={165}
+          className="blur-xs rotate-[45deg]"
+        />
+      </motion.div>
+
+      <motion.div
+        className="hidden md:block absolute top-10 right-10"
+        animate={{
+          y: [0, -10, 0],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <Image
+          src="/symbol-conecta-wtbg-white-transformed.webp"
+          alt="Logo Equipe Conecta"
+          width={207}
+          height={99}
+          className="blur-xs rotate-[150deg]"
+        />
+      </motion.div>
 
       <div className="container mx-auto px-4">
         <motion.h2

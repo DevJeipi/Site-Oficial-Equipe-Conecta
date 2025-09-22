@@ -16,7 +16,7 @@ import Button from "@/components/ui/cta";
 
 export default function Services() {
   return (
-    <section className="container py-8 gap-10 flex flex-col items-center justify-center overflow-hidden">
+    <section className="container py-20 gap-10 flex flex-col items-center justify-center overflow-hidden">
       {/*Título*/}
       <div className="font-unbounded flex flex-col items-start justify-start gap-2 w-full">
         <h1
