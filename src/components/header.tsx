@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="fixed container shadow-2xl rounded-4xl top-0 z-[1100] w-full bg-white/30 backdrop-blur-sm transition-colors">
+    <header className="fixed container shadow-2xl rounded-4xl top-2 z-[1100] w-full bg-white/30 backdrop-blur-sm transition-colors">
       <div className="flex rounded-4xl items-center justify-between h-16 sm:h-20 px-4">
         <Link href="/">
           <Image
@@ -15,7 +15,7 @@ export default function Header() {
           />
         </Link>
 
-        <Button>Entre em contato</Button>
+        <Button>Converse conosco</Button>
       </div>
     </header>
   );

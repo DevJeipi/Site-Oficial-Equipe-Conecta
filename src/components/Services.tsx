@@ -31,8 +31,8 @@ export default function Services() {
         <h2 className="text-4xl font-bold">Encontre o que você precisa</h2>
       </div>
       {/* Serviço 1 Tráfego Pago */}
-      <div className="flex w-full gap-7">
-        <div className="flex w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
+      <div className="flex flex-col md:flex-row w-full gap-7">
+        <div className="flex w-full md:w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
           <Castle size={48} />
           <h2 className="text-4xl font-unbounded font-bold">
             Marketing de Performance
@@ -42,10 +42,10 @@ export default function Services() {
             Maximizamos seu investimento com estratégias ágeis e otimizadas para
             gerar resultados reais.
           </p>
-          <Button>Entre em contato</Button>
+          <Button>Converse conosco</Button>
         </div>
         <ul className="flex flex-col gap-6 w-full md:w-3/5">
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <ChartLine
               className="flex-shrink-0"
               size={48}
@@ -61,7 +61,7 @@ export default function Services() {
               </p>
             </div>
           </li>
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <Rocket
               className="flex-shrink-0"
               size={48}
@@ -78,7 +78,7 @@ export default function Services() {
               </p>
             </div>
           </li>
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <Target
               className="flex-shrink-0"
               size={48}
@@ -97,8 +97,8 @@ export default function Services() {
         </ul>
       </div>
       {/* Serviço 2 Design */}
-      <div className="flex w-full gap-7">
-        <div className="flex w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
+      <div className="flex flex-col md:flex-row w-full gap-7">
+        <div className="flex w-full md:w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
           <Layers size={48} />
           <h2 className="text-4xl font-unbounded font-bold">
             Visual & Engajamento
@@ -108,10 +108,10 @@ export default function Services() {
             Transmitimos sua essência com criatividade e estratégia, elevando a
             percepção da sua marca.
           </p>
-          <Button>Entre em contato</Button>
+          <Button>Converse conosco</Button>
         </div>
         <ul className="flex flex-col gap-6 w-full md:w-3/5">
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <Camera size={48} color="var(--color-primary)" />
             <div>
               <h3 className="text-2xl font-unbounded font-bold text-primary">
@@ -123,7 +123,7 @@ export default function Services() {
               </p>
             </div>
           </li>
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <Pencil
               className="flex-shrink-0"
               size={48}
@@ -139,7 +139,7 @@ export default function Services() {
               </p>
             </div>
           </li>
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <Hash
               className="flex-shrink-0"
               size={48}
@@ -158,8 +158,8 @@ export default function Services() {
         </ul>
       </div>
       {/* Serviço 3 Sites */}
-      <div className="flex w-full gap-7">
-        <div className="flex w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
+      <div className="flex flex-col md:flex-row w-full gap-7">
+        <div className="flex w-full md:w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
           <CodeXml size={48} />
           <h2 className="text-4xl font-unbounded font-bold">Web Inteligente</h2>
           <div className="w-2/3 h-0.25 bg-secondary"></div>
@@ -167,10 +167,10 @@ export default function Services() {
             Desenvolvemos sites estratégicos, focados em performance,
             usabilidade e conversão.
           </p>
-          <Button>Entre em contato</Button>
+          <Button>Converse conosco</Button>
         </div>
         <ul className="flex flex-col gap-6 w-full md:w-3/5">
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <Laptop
               className="flex-shrink-0"
               size={48}
@@ -186,7 +186,7 @@ export default function Services() {
               </p>
             </div>
           </li>
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <Send
               className="flex-shrink-0"
               size={48}
@@ -203,7 +203,7 @@ export default function Services() {
               </p>
             </div>
           </li>
-          <li className="flex items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+          <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
             <Wrench
               className="flex-shrink-0"
               size={48}
