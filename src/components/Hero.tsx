@@ -20,6 +20,45 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Mobile Decorative Elements */}
+      <div className="md:hidden absolute inset-0 -z-5 overflow-hidden">
+        {/* Top right decorative circle */}
+        <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-gradient-to-br from-primary/10 to-primary/5" />
+
+        {/* Middle left decorative shape */}
+        <div className="absolute top-1/3 -left-32 w-64 h-64 rounded-full bg-gradient-to-tr from-primary/10 to-transparent" />
+
+        {/* Bottom decorative waves */}
+        <div className="absolute bottom-0 w-full">
+          <svg
+            viewBox="0 0 1440 320"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-full h-auto opacity-20"
+          >
+            <path
+              d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              fill="url(#gradient-wave)"
+            />
+            <defs>
+              <linearGradient id="gradient-wave" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="#316DDB" stopOpacity="0.2" />
+                <stop offset="100%" stopColor="#0b3b7a" stopOpacity="0.3" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        {/* Floating dots pattern */}
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: "radial-gradient(#0b3b7a 1px, transparent 1px)",
+            backgroundSize: "32px 32px",
+          }}
+        />
+      </div>
+
       <div className="container min-h-screen relative flex flex-col items-center justify-center px-4 md:px-6">
         {/* Main Title */}
         <h1 className="font-unbounded flex w-full flex-col gap-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
