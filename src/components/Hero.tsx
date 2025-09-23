@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative z-20 rounded-b-4xl md:min-h-dvh w-full overflow-hidden">
+    <section className="relative z-20 rounded-b-4xl min-h-dvh w-full overflow-hidden">
       {/* Background Split */}
       <div className="absolute inset-0 flex overflow-hidden -z-10">
         <div className="w-full md:w-1/2 bg-secondary" />
