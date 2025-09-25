@@ -13,7 +13,6 @@ import {
   Wrench,
 } from "lucide-react";
 import Button from "@/components/ui/cta";
-import { section } from "framer-motion/client";
 
 export default function Services() {
   return (
@@ -44,7 +43,9 @@ export default function Services() {
               Maximizamos seu investimento com estratégias ágeis e otimizadas
               para gerar resultados reais.
             </p>
-            <Button>Converse conosco</Button>
+            <Button variant="text" action="whatsapp">
+              Converse conosco
+            </Button>
           </div>
           <ul className="flex flex-col gap-6 w-full md:w-3/5">
             <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
@@ -111,7 +112,9 @@ export default function Services() {
               Transmitimos sua essência com criatividade e estratégia, elevando
               a percepção da sua marca.
             </p>
-            <Button>Converse conosco</Button>
+            <Button variant="text" action="whatsapp">
+              Converse conosco
+            </Button>
           </div>
           <ul className="flex flex-col gap-6 w-full md:w-3/5">
             <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
@@ -172,7 +175,9 @@ export default function Services() {
               Desenvolvemos sites estratégicos, focados em performance,
               usabilidade e conversão.
             </p>
-            <Button>Converse conosco</Button>
+            <Button variant="text" action="whatsapp">
+              Converse conosco
+            </Button>
           </div>
           <ul className="flex flex-col gap-6 w-full md:w-3/5">
             <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">

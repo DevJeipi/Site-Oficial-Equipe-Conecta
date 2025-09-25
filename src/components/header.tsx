@@ -15,7 +15,9 @@ export default function Header() {
           />
         </Link>
 
-        <Button>Converse conosco</Button>
+        <Button variant="icon" action="whatsapp">
+          Converse conosco
+        </Button>
       </div>
     </header>
   );

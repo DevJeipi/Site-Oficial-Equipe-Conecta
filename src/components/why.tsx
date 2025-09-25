@@ -24,7 +24,7 @@ export default function Why() {
     <section className="container py-20">
       <div className="flex flex-col max-w-4xl mb-10 gap-2">
         <span
-          className="indent-10 text-2xl relative before:content-[''] before:absolute before:left-0 before:top-3.5
+          className="font-unbounded  indent-10 text-2xl relative before:content-[''] before:absolute before:left-0 before:top-3.5
                        before:w-8 before:h-[2px] before:bg-primary"
         >
           Por que nos escolher?
@@ -60,7 +60,9 @@ export default function Why() {
           Pronto para impulsionar seu negócio com estratégias que realmente
           funcionam?
         </p>
-        <Button>Vamos Conversar</Button>
+        <Button variant="text" action="whatsapp">
+          Vamos Conversar
+        </Button>
       </div>
     </section>
   );
