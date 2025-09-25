@@ -1,144 +1,248 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
-import { motion } from "framer-motion";
 
-// Portfolio item type
 type PortfolioItem = {
-  id: number;
+  id: string;
   title: string;
   description: string;
   image: string;
-  category: string;
+  category: "sites" | "social" | "branding";
   href: string;
 };
 
-// Example portfolio items
 const portfolioItems: PortfolioItem[] = [
   {
-    id: 1,
-    title: "Projeto A",
-    description: "Descrição do Projeto A.",
-    image: "/images/portfolio-a.jpg",
-    category: "Web Design",
-    href: "/portfolio/projeto-a",
+    id: "fef",
+    title: "FeF Engenharia",
+    description:
+      "Site institucional desenvolvido para transmitir credibilidade e autoridade.",
+    image: "/banner-fef-portfolio-transformed.webp",
+    category: "sites",
+    href: "/",
   },
   {
-    id: 2,
-    title: "Projeto B",
-    description: "Descrição do Projeto B.",
-    image: "/images/portfolio-b.jpg",
-    category: "Desenvolvimento",
-    href: "/portfolio/projeto-b",
+    id: "shallow",
+    title: "Shallow Revendedoras",
+    description:
+      "Landing Page desenvolvida para captar revendedoras para a marca.",
+    image: "/banner-shallow-portfolio-transformed.webp",
+    category: "sites",
+    href: "/",
   },
   {
-    id: 3,
-    title: "Projeto C",
-    description: "Descrição do Projeto C.",
-    image: "/images/portfolio-c.jpg",
-    category: "Marketing",
-    href: "/portfolio/projeto-c",
+    id: "pace",
+    title: "O Pace Financeiro",
+    description:
+      "Landing Page desenvolvida para captar leads e apresentar o curso.",
+    image: "/banner-opace-portfolio-transformed.webp",
+    category: "sites",
+    href: "/",
   },
   {
-    id: 4,
-    title: "Projeto D",
-    description: "Descrição do Projeto C.",
-    image: "/images/portfolio-c.jpg",
-    category: "Marketing",
-    href: "/portfolio/projeto-c",
+    id: "opace",
+    title: "O Pace Financeiro",
+    description:
+      "Identidade visual pensada para transmitir a verdadeira essência de Otávio Daudt.",
+    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    category: "branding",
+    href: "/portfolio/opacefinanceiro",
   },
-  // Adicione mais itens conforme necessário
+  {
+    id: "shallowrunning",
+    title: "Shallow Running",
+    description:
+      "Identidade visual formada para trazer a área de corrida da marca Shallow.",
+    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    category: "branding",
+    href: "/portfolio/shallowrunning",
+  },
+  {
+    id: "bauer",
+    title: "Bauer Psicólogo",
+    description:
+      "Identidade visual criada para refletir a personalidade e valores do profissional.",
+    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    category: "branding",
+    href: "/portfolio/bauerpsicologo",
+  },
+  {
+    id: "janete",
+    title: "Janete Celebrante",
+    description:
+      "Artes e gerenciamento para demonstrar a autoridade e credibilidade do trabalho.",
+    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    category: "social",
+    href: "/",
+  },
+  {
+    id: "shallow",
+    title: "Shallow",
+    description:
+      "Conteúdos criados para crescer a marca de forma sustentável e escalável.",
+    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    category: "social",
+    href: "/",
+  },
+  {
+    id: "lc",
+    title: "LC Joias Únicas",
+    description:
+      "Posts e vídeos desenvolvidos para redes sociais, focando em conversão, engajamento e autoridade.",
+    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    category: "social",
+    href: "/",
+  },
 ];
 
-export default function Portfolio() {
-  return (
-    <section id="portfolio" className="w-full py-20 overflow-hidden">
-      <div className="container mx-auto flex flex-col gap-10">
-        {/* Header stays the same */}
-        <div className="font-unbounded flex flex-col items-start justify-start gap-2 w-full">
-          <span
-            className="indent-10 text-2xl font-unbounded relative before:content-[''] before:absolute before:left-0 before:top-3.5
-                       before:w-8 before:h-[2px] before:bg-primary"
-          >
-            Nosso Portfólio
-          </span>
-          <h2 className="text-4xl font-unbounded font-bold">
-            Veja a qualidade dos nossos projetos
-          </h2>
-        </div>
+function PortfolioCard({ item }: { item: PortfolioItem }) {
+  const handleClick = () => {
+    if (item.category !== "branding") {
+      window.open("https://wa.me/5551986154167", "_blank");
+    }
+  };
 
-        {/* Replace Grid with Swiper */}
+  const cardContent = (
+    <article className="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all h-full flex flex-col">
+      <div className="relative aspect-video overflow-hidden flex-shrink-0">
+        <Image
+          src={item.image}
+          alt={item.title}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 768px) 90vw, (max-width: 1200px) 33vw"
+        />
+      </div>
+
+      <div className="p-6 flex flex-col flex-grow">
+        <span className="inline-block px-3 py-1 text-sm text-primary bg-primary/10 rounded-full w-fit">
+          {item.category === "sites" && "Desenvolvimento Web"}
+          {item.category === "social" && "Social Media"}
+          {item.category === "branding" && "Identidade Visual"}
+        </span>
+
+        <h3 className="mt-4 text-xl font-unbounded font-bold line-clamp-1">
+          {item.title}
+        </h3>
+
+        <p className="mt-2 text-gray-600 text-sm line-clamp-2 flex-grow">
+          {item.description}
+        </p>
+
+        <div className="mt-6 flex items-center justify-between pt-4 border-t border-gray-100">
+          <span className="text-primary font-medium text-sm">
+            {item.category === "branding"
+              ? "Ver projeto completo"
+              : "Solicitar orçamento"}
+          </span>
+          <svg
+            className="w-6 h-6 text-primary transition-transform group-hover:translate-x-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </div>
+      </div>
+    </article>
+  );
+
+  return (
+    <motion.div
+      whileHover={{ y: -5 }}
+      transition={{ duration: 0.2 }}
+      className="group"
+    >
+      {item.category === "branding" ? (
+        <Link href={item.href}>{cardContent}</Link>
+      ) : (
+        <div onClick={handleClick} className="cursor-pointer">
+          {cardContent}
+        </div>
+      )}
+    </motion.div>
+  );
+}
+
+export default function Portfolio() {
+  const [activeCategory, setActiveCategory] = useState<
+    "sites" | "social" | "branding"
+  >("branding");
+
+  const categories = [
+    { id: "branding", label: "Identidade Visual" },
+    { id: "sites", label: "Sites" },
+    { id: "social", label: "Social Media" },
+  ];
+
+  const filteredItems = portfolioItems.filter(
+    (item) => item.category === activeCategory
+  );
+
+  return (
+    <section className="container py-20">
+      <div className="flex flex-col gap-2 mb-10">
+        <span
+          className="font-unbounded indent-10 text-2xl relative before:content-[''] before:absolute before:left-0 before:top-3.5
+                       before:w-8 before:h-[2px] before:bg-primary"
+        >
+          Nosso Portfólio
+        </span>
+        <h2 className="text-4xl md:text-5xl font-unbounded font-bold">
+          Veja alguns de nossos projetos
+        </h2>
+
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mt-8">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id as any)}
+              className={`px-6 py-3 rounded-full text-sm font-medium transition-all w-full sm:w-auto
+                ${
+                  activeCategory === cat.id
+                    ? "bg-primary text-white"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                }`}
+            >
+              {cat.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="hidden md:grid md:grid-cols-3 gap-8">
+        {filteredItems.map((item) => (
+          <PortfolioCard key={item.id} item={item} />
+        ))}
+      </div>
+
+      <div className="md:hidden">
         <Swiper
-          modules={[Pagination, Navigation]}
+          modules={[Pagination]}
           pagination={{
             clickable: true,
-            bulletActiveClass: "bg-primary",
-            bulletClass:
-              "inline-block w-2 h-2 mx-1 rounded-full bg-gray-200 cursor-pointer transition-colors",
+            bulletClass: "swiper-pagination-bullet",
+            bulletActiveClass: "swiper-pagination-bullet-active",
           }}
-          breakpoints={{
-            640: { slidesPerView: 1, spaceBetween: 20 },
-            768: { slidesPerView: 2, spaceBetween: 30 },
-            1024: { slidesPerView: 3, spaceBetween: 30 },
-          }}
-          className="w-full !pb-12" // padding bottom for pagination dots
+          spaceBetween={20}
+          slidesPerView={1.2}
+          className="!pb-12"
         >
-          {portfolioItems.map((item) => (
+          {filteredItems.map((item) => (
             <SwiperSlide key={item.id}>
-              <motion.div
-                whileHover={{ y: -5 }}
-                transition={{ duration: 0.2 }}
-                className="h-full"
-              >
-                <Link href={item.href} className="block h-full">
-                  <article className="bg-white rounded-2xl shadow-lg overflow-hidden transition-shadow hover:shadow-xl h-full">
-                    <div className="relative h-64 overflow-hidden">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    </div>
-
-                    <div className="p-6">
-                      <span className="inline-block px-3 py-1 text-sm text-primary bg-primary/10 rounded-full">
-                        {item.category}
-                      </span>
-
-                      <h3 className="mt-4 text-2xl font-unbounded font-bold">
-                        {item.title}
-                      </h3>
-
-                      <p className="mt-2 text-gray-600">{item.description}</p>
-
-                      <div className="mt-6">
-                        <span className="inline-flex items-center text-primary font-medium">
-                          Entre em Contato
-                          <svg
-                            className="ml-2 w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9 5l7 7-7 7"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </div>
-                  </article>
-                </Link>
-              </motion.div>
+              <PortfolioCard item={item} />
             </SwiperSlide>
           ))}
         </Swiper>
