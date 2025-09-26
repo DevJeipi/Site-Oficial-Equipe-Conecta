@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative z-20 rounded-b-4xl min-h-dvh w-full overflow-hidden">
       {/* Background Split */}
       <div className="absolute inset-0 flex overflow-hidden -z-10">
-        <div className="w-full md:w-1/2 bg-secondary" />
+        <div className="w-full h-full md:w-1/2 bg-secondary" />
         <div className="relative w-1/2 md:block hidden">
           <Image
             src="/bg-waves-conecta-lp.webp"
@@ -63,13 +63,13 @@ export default function Hero() {
         {/* Main Title */}
         <h1 className="font-unbounded flex w-full flex-col gap-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
           <span className="flex items-start justify-start text-neutral">
-            Construindo
+            Faça parte da
           </span>
           <span className="inline-flex items-center justify-center text-secondary rounded-xl bg-gradient-to-r from-[#316DDB] to-primary p-4">
-            Experiências
+            Conexão Azul
           </span>
           <span className="flex items-end justify-end text-neutral">
-            Inovadoras
+            E cresça junto
           </span>
         </h1>
 

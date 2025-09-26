@@ -19,10 +19,7 @@ export default function Footer() {
               height={33}
               className="mb-4"
             />
-            <p className="text-white/80">
-              Transformamos ideias em resultados através de estratégias digitais
-              personalizadas.
-            </p>
+            <p className="text-white/80">Faça parte da Conexão Azul!</p>
           </div>
 
           {/* Quick Links */}

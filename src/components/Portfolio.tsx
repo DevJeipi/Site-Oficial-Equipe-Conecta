@@ -192,7 +192,7 @@ export default function Portfolio() {
   );
 
   return (
-    <section className="container py-20">
+    <section id="portfolio" className="container py-20">
       <div className="flex flex-col gap-2 mb-10">
         <span
           className="font-unbounded indent-10 text-2xl relative before:content-[''] before:absolute before:left-0 before:top-3.5

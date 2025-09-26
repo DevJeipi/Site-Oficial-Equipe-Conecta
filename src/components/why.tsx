@@ -57,8 +57,7 @@ export default function Why() {
 
       <div className="flex flex-col items-center text-center">
         <p className="text-lg text-gray-600 mb-4">
-          Pronto para impulsionar seu negócio com estratégias que realmente
-          funcionam?
+          Pronto para fazer parte da conexão azul?
         </p>
         <Button variant="text" action="whatsapp">
           Vamos Conversar

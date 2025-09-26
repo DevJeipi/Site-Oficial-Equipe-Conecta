@@ -3,12 +3,12 @@ import {
   Castle,
   ChartLine,
   CodeXml,
-  Hash,
+  SwatchBook,
   Laptop,
   Layers,
   Pencil,
   Rocket,
-  Send,
+  ShoppingBag,
   Target,
   Wrench,
 } from "lucide-react";
@@ -70,7 +70,6 @@ export default function Services() {
                 className="flex-shrink-0"
                 size={48}
                 color="var(--color-primary)"
-                fill="var(--color-primary)"
               />
               <div>
                 <h3 className="text-2xl font-unbounded font-bold text-primary">
@@ -146,18 +145,19 @@ export default function Services() {
               </div>
             </li>
             <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
-              <Hash
+              <SwatchBook
                 className="flex-shrink-0"
                 size={48}
                 color="var(--color-primary)"
               />
               <div>
                 <h3 className="text-2xl font-unbounded font-bold text-primary">
-                  Social Media
+                  Criação de Identidade Visual
                 </h3>
                 <p>
-                  Criamos conteúdos e gerenciamos suas redes para fortalecer sua
-                  marca e gerar resultados.
+                  Desenvolvemos logotipos, paletas de cores, elementos visuais,
+                  apresentações, tipografia, conceito, tudo para fortalecer sua
+                  marca.
                 </p>
               </div>
             </li>
@@ -172,8 +172,8 @@ export default function Services() {
             </h2>
             <div className="w-2/3 h-0.25 bg-secondary"></div>
             <p>
-              Desenvolvemos sites estratégicos, focados em performance,
-              usabilidade e conversão.
+              Desenvolvemos soluções tecnológicas estratégicas, focados em
+              performance, usabilidade e conversão.
             </p>
             <Button variant="text" action="whatsapp">
               Converse conosco
@@ -191,25 +191,25 @@ export default function Services() {
                   Desenvolvimento de Sites
                 </h3>
                 <p>
-                  Desenvolvemos sites modernos, responsivos e otimizados para
-                  conversão.
+                  Desenvolvemos de landing pages e sites institucionais
+                  totalmente modernos , responsivos e otimizados para seu
+                  objetivo.
                 </p>
               </div>
             </li>
             <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
-              <Send
+              <ShoppingBag
                 className="flex-shrink-0"
                 size={48}
                 color="var(--color-primary)"
-                fill="var(--color-primary)"
               />
               <div>
                 <h3 className="text-2xl font-unbounded font-bold text-primary">
-                  Otimização e SEO
+                  Criação de E-commerce
                 </h3>
                 <p>
-                  Melhoramos a velocidade, usabilidade e visibilidade do seu
-                  site nos buscadores.
+                  Criamos lojas virtuais otimizadas para proporcionar a melhor
+                  experiência de compra e maximizar suas vendas online.
                 </p>
               </div>
             </li>
@@ -218,15 +218,14 @@ export default function Services() {
                 className="flex-shrink-0"
                 size={48}
                 color="var(--color-primary)"
-                fill="var(--color-primary)"
               />
               <div>
                 <h3 className="text-2xl font-unbounded font-bold text-primary">
-                  Manutenção & Suporte
+                  Automações e CRMs
                 </h3>
                 <p>
-                  Garantimos o bom funcionamento do seu site com atualizações,
-                  otimizações e suporte técnico contínuo.
+                  Implementamos soluções de automação e CRM para otimizar seus
+                  processos e melhorar o relacionamento com seus clientes.
                 </p>
               </div>
             </li>
