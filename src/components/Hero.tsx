@@ -63,13 +63,13 @@ export default function Hero() {
         {/* Main Title */}
         <h1 className="font-unbounded flex w-full flex-col gap-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
           <span className="flex items-start justify-start text-neutral">
-            Faça parte da
+            Construindo
           </span>
           <span className="inline-flex items-center justify-center text-secondary rounded-xl bg-gradient-to-r from-[#316DDB] to-primary p-4">
-            Conexão Azul
+            Experiências
           </span>
           <span className="flex items-end justify-end text-neutral">
-            E cresça junto
+            Inovadoras
           </span>
         </h1>
 
