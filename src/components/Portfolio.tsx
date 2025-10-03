@@ -59,7 +59,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "Shallow Running",
     description:
       "Identidade visual formada para trazer a área de corrida da marca Shallow.",
-    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    image: "/logo-shallow-running1.webp",
     category: "branding",
     href: "/portfolio/shallowrunning",
   },
@@ -68,7 +68,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "Bauer Psicólogo",
     description:
       "Identidade visual criada para refletir a personalidade e valores do profissional.",
-    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    image: "/bauer-logo.webp",
     category: "branding",
     href: "/portfolio/bauerpsicologo",
   },
@@ -77,7 +77,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "Janete Celebrante",
     description:
       "Artes e gerenciamento para demonstrar a autoridade e credibilidade do trabalho.",
-    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    image: "/portfolio-kit-janete.webp",
     category: "social",
     href: "/",
   },
@@ -86,7 +86,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "Shallow",
     description:
       "Conteúdos criados para crescer a marca de forma sustentável e escalável.",
-    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    image: "/portfolio-kit-shallow.webp",
     category: "social",
     href: "/",
   },
@@ -95,7 +95,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "LC Joias Únicas",
     description:
       "Posts e vídeos desenvolvidos para redes sociais, focando em conversão, engajamento e autoridade.",
-    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    image: "/portfolio-kit-lc.webp",
     category: "social",
     href: "/",
   },
