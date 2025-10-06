@@ -51,9 +51,13 @@ const Button = ({
 
   const baseClasses = `
     relative font-dm-sans duration-500 
-    group cursor-pointer text-sky-50 overflow-hidden rounded-md 
+    group cursor-pointer text-sky-50 overflow-hidden rounded-full md:rounded-md
     bg-[#252525] dark:bg-secondary flex justify-center items-center font-bold dark:text-neutral
-    ${isIconOnly ? "p-3 w-12 h-12 md:w-auto md:px-8 md:py-3" : "py-3 px-8"}
+    ${
+      isIconOnly
+        ? "p-3 w-10 h-10 md:w-12 md:h-12 md:w-auto md:px-8 md:py-3"
+        : "py-3 px-8"
+    }
     ${className}
   `;
 

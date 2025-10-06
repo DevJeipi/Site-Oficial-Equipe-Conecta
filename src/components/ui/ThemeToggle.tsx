@@ -13,7 +13,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="relative cursor-pointer p-2 w-10 h-10 rounded-full transition-all duration-300
+      className="relative cursor-pointer p-2 w-10 h-10 md:w-12 md:h-12 rounded-full transition-all duration-300
                  bg-gray-200 dark:bg-neutral
                  hover:bg-gray-300 dark:hover:bg-neutral/80
                  shadow-md dark:shadow-xl"
