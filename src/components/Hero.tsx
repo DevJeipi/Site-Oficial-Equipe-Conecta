@@ -16,17 +16,17 @@ export default function Hero() {
             priority
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-primary/20 to-primary/40" />
+          <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-primary/20 to-primary/40 " />
         </div>
       </div>
 
       {/* Mobile Decorative Elements */}
       <div className="md:hidden absolute inset-0 -z-5 overflow-hidden">
         {/* Top right decorative circle */}
-        <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-gradient-to-br from-primary/10 to-primary/5" />
+        <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-gradient-to-br from-primary/10 to-primary/5 dark:from-secondary/10 dark:to-secondary/5" />
 
         {/* Middle left decorative shape */}
-        <div className="absolute top-1/3 -left-32 w-64 h-64 rounded-full bg-gradient-to-tr from-primary/10 to-transparent" />
+        <div className="absolute top-1/3 -left-32 w-64 h-64 rounded-full bg-gradient-to-tr from-primary/10 to-transparent dark:from-secondary/10" />
 
         {/* Bottom decorative waves */}
         <div className="absolute bottom-0 w-full">
