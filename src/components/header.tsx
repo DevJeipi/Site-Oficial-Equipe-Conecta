@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Button from "./ui/cta";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
-export default function Header() {
+export function Header() {
   return (
     <header className="fixed container shadow-2xl rounded-4xl top-2 z-[1100] w-full bg-white/30 backdrop-blur-sm transition-colors">
       <div className="flex rounded-4xl items-center justify-between h-16 sm:h-20 px-4">
@@ -15,9 +16,13 @@ export default function Header() {
           />
         </Link>
 
-        <Button variant="icon" action="whatsapp">
-          Converse conosco
-        </Button>
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
+
+          <Button variant="icon" action="whatsapp">
+            Converse conosco
+          </Button>
+        </div>
       </div>
     </header>
   );

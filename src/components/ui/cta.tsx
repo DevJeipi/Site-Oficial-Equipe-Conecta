@@ -31,11 +31,11 @@ const Button = ({
   const buttonContent = (
     <>
       {/* Animated circles background */}
-      <div className="absolute z-10 w-48 h-48 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#0B0B0B] delay-150 group-hover:delay-75" />
-      <div className="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#0F0F0F] delay-150 group-hover:delay-100" />
-      <div className="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#202020] delay-150 group-hover:delay-150" />
-      <div className="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#252525] delay-150 group-hover:delay-200" />
-      <div className="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-neutral delay-150 group-hover:delay-300" />
+      <div className="absolute z-10 w-48 h-48 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#0B0B0B] dark:bg-gray-300 delay-150 group-hover:delay-75" />
+      <div className="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#0F0F0F] dark:bg-gray-200 delay-150 group-hover:delay-100" />
+      <div className="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#202020] dark:bg-gray-100 delay-150 group-hover:delay-150" />
+      <div className="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#252525] dark:bg-gray-50 delay-150 group-hover:delay-200" />
+      <div className="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-neutral dark:bg-secondary delay-150 group-hover:delay-300" />
 
       {/* Content */}
       {isIconOnly ? (
@@ -50,9 +50,9 @@ const Button = ({
   );
 
   const baseClasses = `
-    relative border font-dm-sans hover:border-secondary duration-500 
+    relative font-dm-sans duration-500 
     group cursor-pointer text-sky-50 overflow-hidden rounded-md 
-    bg-[#252525] flex justify-center items-center font-bold
+    bg-[#252525] dark:bg-secondary flex justify-center items-center font-bold dark:text-neutral
     ${isIconOnly ? "p-3 w-12 h-12 md:w-auto md:px-8 md:py-3" : "py-3 px-8"}
     ${className}
   `;

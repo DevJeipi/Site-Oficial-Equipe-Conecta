@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative z-20 rounded-b-4xl min-h-dvh w-full overflow-hidden">
       {/* Background Split */}
       <div className="absolute inset-0 flex overflow-hidden -z-10">
-        <div className="w-full h-full md:w-1/2 bg-secondary" />
+        <div className="w-full h-full md:w-1/2 bg-secondary dark:bg-neutral" />
         <div className="relative w-1/2 md:block hidden">
           <Image
             src="/bg-waves-conecta-lp.webp"
@@ -62,13 +62,13 @@ export default function Hero() {
       <div className="container min-h-screen relative flex flex-col items-center justify-center px-4 md:px-6">
         {/* Main Title */}
         <h1 className="font-unbounded flex w-full flex-col gap-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
-          <span className="flex items-start justify-start text-neutral">
+          <span className="flex items-start justify-start text-neutral dark:text-secondary">
             Construindo
           </span>
           <span className="inline-flex items-center justify-center text-secondary rounded-xl bg-gradient-to-r from-[#316DDB] to-primary p-4">
             Experiências
           </span>
-          <span className="flex items-end justify-end text-neutral">
+          <span className="flex items-end justify-end text-neutral dark:text-secondary">
             Inovadoras
           </span>
         </h1>
@@ -78,7 +78,7 @@ export default function Hero() {
           <p
             className="text-sm md:text-base text-justify relative indent-10 
                        before:content-[''] before:absolute before:left-0 before:top-3
-                       before:w-8 before:h-[2px] before:bg-primary"
+                       before:w-8 before:h-[2px] before:bg-primary dark:before:bg-secondary"
           >
             A inovação move o mundo, e
             <span className="font-semibold"> nós movemos a sua marca.</span>{" "}
@@ -99,9 +99,9 @@ export default function Hero() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <div className="bg-neutral p-2 rounded-full shadow-lg animate-bounce">
+          <div className="bg-neutral dark:bg-secondary p-2 rounded-full shadow-lg animate-bounce">
             <ChevronDown
-              className="text-secondary w-8 h-8 md:w-12 md:h-12"
+              className="text-secondary dark:text-neutral w-8 h-8 md:w-12 md:h-12"
               aria-hidden="true"
             />
           </div>

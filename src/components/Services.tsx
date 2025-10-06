@@ -16,7 +16,7 @@ import Button from "@/components/ui/cta";
 
 export default function Services() {
   return (
-    <section className="relative w-full bg-secondary rounded-4xl z-20">
+    <section className="relative w-full bg-secondary dark:bg-neutral rounded-4xl z-20">
       <div
         id="services"
         className="container py-20 gap-10 flex flex-col items-center justify-center overflow-hidden"
@@ -25,7 +25,7 @@ export default function Services() {
         <div className="font-unbounded flex flex-col items-start justify-start gap-2 w-full">
           <h1
             className="indent-10 text-2xl relative before:content-[''] before:absolute before:left-0 before:top-3.5
-                       before:w-8 before:h-[2px] before:bg-primary"
+                       before:w-8 before:h-[2px] before:bg-primary dark:before:bg-secondary"
           >
             Nossos Serviços
           </h1>
@@ -48,14 +48,13 @@ export default function Services() {
             </Button>
           </div>
           <ul className="flex flex-col gap-6 w-full lg:w-3/5">
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <ChartLine
-                className="flex-shrink-0"
+                className="flex-shrink-0 text-primary dark:text-secondary"
                 size={48}
-                color="var(--color-primary)"
               />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
                   Gestão de Tráfego Pago
                 </h3>
                 <p>
@@ -65,14 +64,13 @@ export default function Services() {
                 </p>
               </div>
             </li>
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <Rocket
-                className="flex-shrink-0"
+                className="flex-shrink-0 text-primary dark:text-secondary"
                 size={48}
-                color="var(--color-primary)"
               />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
                   Growth Hacking
                 </h3>
                 <p>
@@ -81,14 +79,13 @@ export default function Services() {
                 </p>
               </div>
             </li>
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <Target
-                className="flex-shrink-0"
+                className="flex-shrink-0 text-primary dark:text-secondary"
                 size={48}
-                color="var(--color-primary)"
               />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
                   Posicionamento Estratégico
                 </h3>
                 <p>
@@ -116,10 +113,13 @@ export default function Services() {
             </Button>
           </div>
           <ul className="flex flex-col gap-6 w-full lg:w-3/5">
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
-              <Camera size={48} color="var(--color-primary)" />
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
+              <Camera
+                size={48}
+                className="flex-shrink-0 text-primary dark:text-secondary"
+              />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
                   Captações Visuais
                 </h3>
                 <p>
@@ -128,14 +128,13 @@ export default function Services() {
                 </p>
               </div>
             </li>
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA]  dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <Pencil
-                className="flex-shrink-0"
+                className="flex-shrink-0 text-primary dark:text-secondary"
                 size={48}
-                color="var(--color-primary)"
               />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary  dark:text-secondary">
                   Criativos para Anúncios
                 </h3>
                 <p>
@@ -144,14 +143,13 @@ export default function Services() {
                 </p>
               </div>
             </li>
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <SwatchBook
-                className="flex-shrink-0"
+                className="flex-shrink-0 text-primary dark:text-secondary"
                 size={48}
-                color="var(--color-primary)"
               />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
                   Criação de Identidade Visual
                 </h3>
                 <p>
@@ -180,14 +178,13 @@ export default function Services() {
             </Button>
           </div>
           <ul className="flex flex-col gap-6 w-full lg:w-3/5">
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <Laptop
-                className="flex-shrink-0"
+                className="flex-shrink-0 text-primary dark:text-secondary"
                 size={48}
-                color="var(--color-primary)"
               />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
                   Desenvolvimento de Sites
                 </h3>
                 <p>
@@ -197,14 +194,13 @@ export default function Services() {
                 </p>
               </div>
             </li>
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <ShoppingBag
-                className="flex-shrink-0"
+                className="flex-shrink-0 text-primary dark:text-secondary"
                 size={48}
-                color="var(--color-primary)"
               />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary   dark:text-secondary">
                   Criação de E-commerce
                 </h3>
                 <p>
@@ -213,14 +209,13 @@ export default function Services() {
                 </p>
               </div>
             </li>
-            <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] p-9 rounded-2xl">
+            <li className="flex flex-col md:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <Wrench
-                className="flex-shrink-0"
+                className="flex-shrink-0 text-primary dark:text-secondary"
                 size={48}
-                color="var(--color-primary)"
               />
               <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary">
+                <h3 className="text-2xl font-unbounded font-bold text-primary  dark:text-secondary">
                   Automações e CRMs
                 </h3>
                 <p>

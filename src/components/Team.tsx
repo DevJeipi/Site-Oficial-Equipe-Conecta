@@ -11,22 +11,22 @@ export default function Team() {
     {
       name: "Alana Smaniotto",
       role: "Sócia Fundadora - Designer e Captações Visuais",
-      image: "/team/alana.jpg",
+      image: "/alana-foto-bgwhite.webp",
     },
     {
       name: "Gustavo Haag",
       role: "Sócio Fundador - Marketing e Performance",
-      image: "/team/gustavo.jpg",
+      image: "/haag-foto-bgwhite.webp",
     },
     {
       name: "João Hubner",
       role: "Sócio Fundador - Desenvolvedor de Sites",
-      image: "/team/joao.jpg",
+      image: "/jp-foto-bgwhite.webp",
     },
     {
       name: "Erick Bernardo",
       role: "Designer Gráfico",
-      image: "/team/erick.jpg",
+      image: "/erick-foto-bgwhite.webp",
     },
     {
       name: "João Guilherme",
@@ -45,14 +45,14 @@ export default function Team() {
       {/* Header and Description */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
         <div className="flex flex-col gap-2">
-          <span className="indent-10 text-2xl font-unbounded relative before:content-[''] before:absolute before:left-0 before:top-3.5 before:w-8 before:h-[2px] before:bg-primary">
+          <span className="indent-10 text-2xl font-unbounded relative before:content-[''] before:absolute before:left-0 before:top-3.5 before:w-8 before:h-[2px] before:bg-primary dark:before:bg-secondary">
             Conheça
           </span>
           <h2 className="text-4xl font-unbounded font-bold">Nossa Equipe</h2>
         </div>
 
         <div className="flex items-center">
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg text-gray-600 dark:text-secondary/80 leading-relaxed">
             Nossa equipe multidisciplinar une experiência e inovação para
             entregar resultados excepcionais. Cada membro traz consigo expertise
             única, contribuindo para o sucesso dos projetos e a satisfação dos

@@ -1,4 +1,5 @@
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 import { Unbounded, DM_Sans } from "next/font/google";
 import { Metadata } from "next";
 
@@ -105,7 +106,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html dir="ltr" lang="pt-BR">
+    <html dir="ltr" lang="pt-BR" suppressHydrationWarning>
       <body
         style={{
           backgroundColor: "#f2f2f2",
@@ -113,7 +114,9 @@ export default function RootLayout({
         }}
         className={`${unbounded.variable} ${dmsans.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -109,7 +109,7 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
   };
 
   const cardContent = (
-    <article className="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all h-full flex flex-col">
+    <article className="relative bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all h-full flex flex-col">
       <div className="relative aspect-video overflow-hidden flex-shrink-0">
         <Image
           src={item.image}
@@ -121,7 +121,7 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
       </div>
 
       <div className="p-6 flex flex-col flex-grow">
-        <span className="inline-block px-3 py-1 text-sm text-primary bg-primary/10 rounded-full w-fit">
+        <span className="inline-block px-3 py-1 text-sm text-primary dark:text-secondary bg-primary/10 dark:bg-secondary/10 rounded-full w-fit">
           {item.category === "sites" && "Desenvolvimento Web"}
           {item.category === "social" && "Social Media"}
           {item.category === "branding" && "Identidade Visual"}
@@ -131,18 +131,18 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
           {item.title}
         </h3>
 
-        <p className="mt-2 text-gray-600 text-sm line-clamp-2 flex-grow">
+        <p className="mt-2 text-gray-600 dark:text-secondary/80 text-sm line-clamp-2 flex-grow">
           {item.description}
         </p>
 
         <div className="mt-6 flex items-center justify-between pt-4 border-t border-gray-100">
-          <span className="text-primary font-medium text-sm">
+          <span className="text-primary dark:text-secondary font-medium text-sm">
             {item.category === "branding"
               ? "Ver projeto completo"
               : "Solicitar orçamento"}
           </span>
           <svg
-            className="w-6 h-6 text-primary transition-transform group-hover:translate-x-1"
+            className="w-6 h-6 text-primary dark:text-secondary transition-transform group-hover:translate-x-1"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -196,7 +196,7 @@ export default function Portfolio() {
       <div className="flex flex-col gap-2 mb-10">
         <span
           className="font-unbounded indent-10 text-2xl relative before:content-[''] before:absolute before:left-0 before:top-3.5
-                       before:w-8 before:h-[2px] before:bg-primary"
+                       before:w-8 before:h-[2px] before:bg-primary dark:before:bg-secondary"
         >
           Nosso Portfólio
         </span>
@@ -213,7 +213,7 @@ export default function Portfolio() {
                 ${
                   activeCategory === cat.id
                     ? "bg-primary text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-transparent dark:hover:bg-secondary/10 dark:text-secondary "
                 }`}
             >
               {cat.label}
