@@ -11,22 +11,22 @@ export default function Team() {
     {
       name: "Alana Smaniotto",
       role: "Sócia Fundadora - Designer e Captações Visuais",
-      image: "/alana-foto-bgwhite.webp",
+      image: "/alana.webp",
     },
     {
       name: "Gustavo Haag",
       role: "Sócio Fundador - Marketing e Performance",
-      image: "/haag-foto-bgwhite.webp",
+      image: "/haag.webp",
     },
     {
       name: "João Hubner",
       role: "Sócio Fundador - Desenvolvedor de Sites",
-      image: "/jp-foto-bgwhite.webp",
+      image: "/jp.webp",
     },
     {
       name: "Erick Bernardo",
       role: "Designer Gráfico",
-      image: "/erick-foto-bgwhite.webp",
+      image: "/erick.webp",
     },
     {
       name: "João Guilherme",
@@ -74,6 +74,7 @@ export default function Team() {
                 src={member.image}
                 alt={member.name}
                 fill
+                loading="lazy"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
               />
