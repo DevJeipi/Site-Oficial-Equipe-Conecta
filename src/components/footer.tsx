@@ -64,7 +64,7 @@ export default function Footer() {
                 contato@equipeconecta.com.br
               </a>
               <a
-                href="tel:+5551986154167"
+                href="https://wa.me/5551986154167"
                 className="hover:text-white transition-colors"
               >
                 (51) 98615-4167
