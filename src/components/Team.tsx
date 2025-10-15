@@ -31,12 +31,7 @@ export default function Team() {
     {
       name: "João Guilherme",
       role: "Editor de Vídeo",
-      image: "/team/jao.jpg",
-    },
-    {
-      name: "Arthur Ribeiro",
-      role: "Editor de Vídeo",
-      image: "/team/arthur.jpg",
+      image: "/jao.webp",
     },
   ];
 
@@ -62,7 +57,7 @@ export default function Team() {
       </div>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {teamMembers.map((member, index) => (
           <div
             key={member.name}
@@ -81,7 +76,7 @@ export default function Team() {
             </div>
 
             {/* Text Container */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-5">
               <h3 className="text-xl font-unbounded font-bold text-white">
                 {member.name}
               </h3>

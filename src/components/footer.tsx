@@ -58,7 +58,7 @@ export default function Footer() {
             <h3 className="text-lg font-unbounded font-bold">Contato</h3>
             <div className="flex flex-col gap-2 text-white/80">
               <a
-                href="mailto:contato@equipeconecta.com.br"
+                href="mailto:conectaamarketing@gmail.com"
                 className="hover:text-white transition-colors"
               >
                 contato@equipeconecta.com.br
