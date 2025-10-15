@@ -52,7 +52,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual pensada para transmitir a verdadeira essência de Otávio Daudt.",
     image: "/logo-pacefinanceiro-portfolio-transformed.webp",
     category: "branding",
-    href: "/portfolio/opacefinanceiro",
+    href: "https://wa.me/5551986154167",
   },
   {
     id: "shallowrunning",
@@ -61,7 +61,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual formada para trazer a área de corrida da marca Shallow.",
     image: "/logo-shallow-running1.webp",
     category: "branding",
-    href: "/portfolio/shallowrunning",
+    href: "https://wa.me/5551986154167",
   },
   {
     id: "bauer",
@@ -70,7 +70,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual criada para refletir a personalidade e valores do profissional.",
     image: "/bauer-logo.webp",
     category: "branding",
-    href: "/portfolio/bauerpsicologo",
+    href: "https://wa.me/5551986154167",
   },
   {
     id: "janete",
@@ -138,7 +138,7 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
         <div className="mt-6 flex items-center justify-between pt-4 border-t border-gray-100">
           <span className="text-primary dark:text-secondary font-medium text-sm">
             {item.category === "branding"
-              ? "Ver projeto completo"
+              ? "Solicitar Orçamento" // Mudar para Ver Projeto quando tiver projeto para mostrar
               : "Solicitar orçamento"}
           </span>
           <svg
@@ -179,12 +179,12 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<
     "sites" | "social" | "branding"
-  >("branding");
+  >("social");
 
   const categories = [
+    { id: "social", label: "Social Media" },
     { id: "branding", label: "Identidade Visual" },
     { id: "sites", label: "Sites" },
-    { id: "social", label: "Social Media" },
   ];
 
   const filteredItems = portfolioItems.filter(
