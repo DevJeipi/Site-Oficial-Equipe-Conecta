@@ -23,7 +23,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "FeF Engenharia",
     description:
       "Site institucional desenvolvido para transmitir credibilidade e autoridade.",
-    image: "/banner-fef-portfolio-transformed.webp",
+    image: "/site-fefengenharia.webp",
     category: "sites",
     href: "/",
   },
@@ -32,7 +32,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "Shallow Revendedoras",
     description:
       "Landing Page desenvolvida para captar revendedoras para a marca.",
-    image: "/banner-shallow-portfolio-transformed.webp",
+    image: "/site-revendedoras-shallow.webp",
     category: "sites",
     href: "/",
   },
@@ -41,7 +41,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "O Pace Financeiro",
     description:
       "Landing Page desenvolvida para captar leads e apresentar o curso.",
-    image: "/banner-opace-portfolio-transformed.webp",
+    image: "/site-opacefinanceiro.webp",
     category: "sites",
     href: "/",
   },
@@ -50,7 +50,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "O Pace Financeiro",
     description:
       "Identidade visual pensada para transmitir a verdadeira essência de Otávio Daudt.",
-    image: "/logo-pacefinanceiro-portfolio-transformed.webp",
+    image: "/logo-pacefinanceiro.webp",
     category: "branding",
     href: "https://wa.me/5551986154167",
   },
@@ -77,7 +77,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "Janete Celebrante",
     description:
       "Artes e gerenciamento para demonstrar a autoridade e credibilidade do trabalho.",
-    image: "/portfolio-kit-janete.webp",
+    image: "/portfolio-janete.webp",
     category: "social",
     href: "/",
   },
@@ -86,7 +86,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "Shallow",
     description:
       "Conteúdos criados para crescer a marca de forma sustentável e escalável.",
-    image: "/portfolio-kit-shallow.webp",
+    image: "/portfolio-shallow.webp",
     category: "social",
     href: "/",
   },
@@ -95,7 +95,7 @@ const portfolioItems: PortfolioItem[] = [
     title: "LC Joias Únicas",
     description:
       "Posts e vídeos desenvolvidos para redes sociais, focando em conversão, engajamento e autoridade.",
-    image: "/portfolio-kit-lc.webp",
+    image: "/portfolio-lc.webp",
     category: "social",
     href: "/",
   },
@@ -115,6 +115,7 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
           src={item.image}
           alt={item.title}
           fill
+          loading="lazy"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 768px) 90vw, (max-width: 1200px) 33vw"
         />
