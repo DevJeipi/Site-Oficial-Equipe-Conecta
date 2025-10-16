@@ -1,7 +1,7 @@
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Unbounded, DM_Sans } from "next/font/google";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -91,13 +91,16 @@ export const metadata: Metadata = {
   },
 
   // --- Aparência e Ícones ---
-  themeColor: "#0b3b7a",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0b3b7a",
 };
 
 export default function RootLayout({
