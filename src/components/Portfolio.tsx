@@ -52,7 +52,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual pensada para transmitir a verdadeira essência de Otávio Daudt.",
     image: "/logo-pacefinanceiro.webp",
     category: "branding",
-    href: "https://wa.me/5551986154167",
+    href: "https://wa.me/5551992091626",
   },
   {
     id: "shallowrunning",
@@ -61,7 +61,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual formada para trazer a área de corrida da marca Shallow.",
     image: "/logo-shallow-running1.webp",
     category: "branding",
-    href: "https://wa.me/5551986154167",
+    href: "https://wa.me/5551992091626",
   },
   {
     id: "bauer",
@@ -70,7 +70,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual criada para refletir a personalidade e valores do profissional.",
     image: "/bauer-logo.webp",
     category: "branding",
-    href: "https://wa.me/5551986154167",
+    href: "https://wa.me/5551992091626",
   },
   {
     id: "janete",
@@ -104,7 +104,7 @@ const portfolioItems: PortfolioItem[] = [
 function PortfolioCard({ item }: { item: PortfolioItem }) {
   const handleClick = () => {
     if (item.category !== "branding") {
-      window.open("https://wa.me/5551986154167", "_blank");
+      window.open("https://wa.me/5551992091626", "_blank");
     }
   };
 
