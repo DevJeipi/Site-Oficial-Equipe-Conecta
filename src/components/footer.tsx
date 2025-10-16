@@ -61,13 +61,13 @@ export default function Footer() {
                 href="mailto:conectaamarketing@gmail.com"
                 className="hover:text-white transition-colors"
               >
-                contato@equipeconecta.com.br
+                conectaamarketing@gmail.com
               </a>
               <a
-                href="https://wa.me/5551986154167"
+                href="https://wa.me/5551992091626"
                 className="hover:text-white transition-colors"
               >
-                (51) 98615-4167
+                (51) 99209-1626
               </a>
               {/* Social Links */}
               <div className="flex gap-4 mt-4">
