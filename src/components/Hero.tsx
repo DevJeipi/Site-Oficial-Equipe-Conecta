@@ -79,6 +79,7 @@ export default function Hero() {
             className="text-sm md:text-base text-justify relative indent-10 
                        before:content-[''] before:absolute before:left-0 before:top-3
                        before:w-8 before:h-[2px] before:bg-primary dark:before:bg-secondary"
+            style={{ contentVisibility: "auto" }}
           >
             A inovação move o mundo, e
             <span className="font-semibold"> nós movemos a sua marca.</span>{" "}
