@@ -66,10 +66,10 @@ export default function Hero() {
             Construindo
           </span>
           <span className="inline-flex items-center justify-center text-secondary rounded-xl bg-gradient-to-r from-[#316DDB] to-primary p-4">
-            Experiências
+            Conexões
           </span>
           <span className="flex items-end justify-end text-neutral dark:text-secondary">
-            Inovadoras
+            Reais
           </span>
         </h1>
 
