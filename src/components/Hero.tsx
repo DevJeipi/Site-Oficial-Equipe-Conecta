@@ -74,7 +74,7 @@ export default function Hero() {
         </h1>
 
         {/* Description Text */}
-        <div className="absolute bottom-24 md:bottom-8 left-4 md:left-0 z-10 max-w-[90%] md:max-w-md">
+        <div className="absolute bottom-24 md:bottom-8 left-4 md:left-6 z-10 max-w-[90%] md:max-w-md">
           <p
             className="text-sm md:text-base text-justify relative indent-10 
                        before:content-[''] before:absolute before:left-0 before:top-3
