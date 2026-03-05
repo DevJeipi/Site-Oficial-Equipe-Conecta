@@ -3,6 +3,7 @@ import Image from "next/image";
 type TeamMember = {
   name: string;
   role: string;
+  role2?: string;
   image: string;
 };
 
@@ -10,30 +11,79 @@ export default function Team() {
   const teamMembers: TeamMember[] = [
     {
       name: "Alana Smaniotto",
-      role: "Sócia Fundadora - Designer e Captações Visuais",
+      role: "Co-Fundadora",
+      role2: "Produção Audiovisual e Fotografia Comercial",
       image: "/alana.webp",
     },
     {
       name: "Gustavo Haag",
-      role: "Sócio Fundador - Marketing e Performance",
+      role: "Co-Fundador",
+      role2: "Comercial e Estrategista de Performance",
       image: "/haag.webp",
     },
     {
-      name: "João Hubner",
-      role: "Sócio Fundador - Desenvolvedor de Sites",
+      name: "João Ghilardi",
+      role: "Co-fundador",
+      role2: "Desenvolvedor Web, Automações e Soluções com IA",
       image: "/jp.webp",
-    },
-    {
-      name: "Erick Bernardo",
-      role: "Designer Gráfico",
-      image: "/erick.webp",
     },
     {
       name: "João Guilherme",
       role: "Editor de Vídeo",
-      image: "/jao.webp",
+      role2: "Especialista em After Effects",
+      image: "/jao-foto-site-sem-fundo.webp",
+    },
+    {
+      name: "Arthur",
+      role: "Editor de Vídeo",
+      role2: "Especialista em Premiere",
+      image: "/arthur-foto-site.webp",
+    },
+    {
+      name: "Mateus",
+      role: "Redator",
+      role2: "Analista de Tendências",
+      image: "/mateus-foto-site.webp",
+    },
+    {
+      name: "Matheus",
+      role: "Gestor de Tráfego",
+      role2: "Estratégia e Conversão",
+      image: "/matheusinho-foto-site-sem-fundo.webp",
     },
   ];
+  const firstRowMembers = teamMembers.slice(0, 3);
+  const secondRowMembers = teamMembers.slice(3);
+
+  const renderMemberCard = (member: TeamMember) => (
+    <div
+      key={member.name}
+      className="group relative rounded-2xl overflow-hidden bg-primary transition-all duration-300 hover:shadow-lg"
+    >
+      {/* Image Container */}
+      <div className="relative aspect-[4/5] overflow-hidden">
+        <Image
+          src={member.image}
+          alt={member.name}
+          fill
+          loading="lazy"
+          className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+        />
+      </div>
+
+      {/* Text Container */}
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0b2f71] via-[#0b2f71]/90 to-transparent p-5 pt-16">
+        <h3 className="text-2xl font-unbounded font-bold text-white leading-tight">
+          {member.name}
+        </h3>
+        <p className="text-white/95 mt-1 text-sm leading-tight">{member.role}</p>
+        {member.role2 && (
+          <p className="text-white/85 text-sm leading-tight">{member.role2}</p>
+        )}
+      </div>
+    </div>
+  );
 
   return (
     <section id="team" className="container py-20">
@@ -57,33 +107,14 @@ export default function Team() {
       </div>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-        {teamMembers.map((member, index) => (
-          <div
-            key={member.name}
-            className="group relative bg-gray-100 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg"
-          >
-            {/* Image Container */}
-            <div className="relative aspect-[4/5] overflow-hidden">
-              <Image
-                src={member.image}
-                alt={member.name}
-                fill
-                loading="lazy"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-              />
-            </div>
+      <div className="space-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {firstRowMembers.map(renderMemberCard)}
+        </div>
 
-            {/* Text Container */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-5">
-              <h3 className="text-xl font-unbounded font-bold text-white">
-                {member.name}
-              </h3>
-              <p className="text-white/80 mt-1">{member.role}</p>
-            </div>
-          </div>
-        ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {secondRowMembers.map(renderMemberCard)}
+        </div>
       </div>
     </section>
   );
