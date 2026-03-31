@@ -52,7 +52,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual pensada para transmitir a verdadeira essência de Otávio Daudt.",
     image: "/logo-pacefinanceiro.webp",
     category: "branding",
-    href: "https://wa.me/5551992091626",
+    href: "https://form.typeform.com/to/t6XieXmB",
   },
   {
     id: "shallowrunning",
@@ -61,7 +61,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual formada para trazer a área de corrida da marca Shallow.",
     image: "/logo-shallow-running1.webp",
     category: "branding",
-    href: "https://wa.me/5551992091626",
+    href: "https://form.typeform.com/to/t6XieXmB",
   },
   {
     id: "bauer",
@@ -70,7 +70,7 @@ const portfolioItems: PortfolioItem[] = [
       "Identidade visual criada para refletir a personalidade e valores do profissional.",
     image: "/bauer-logo.webp",
     category: "branding",
-    href: "https://wa.me/5551992091626",
+    href: "https://form.typeform.com/to/t6XieXmB",
   },
   {
     id: "janete",
@@ -104,7 +104,7 @@ const portfolioItems: PortfolioItem[] = [
 function PortfolioCard({ item }: { item: PortfolioItem }) {
   const handleClick = () => {
     if (item.category !== "branding") {
-      window.open("https://wa.me/5551992091626", "_blank");
+      window.open("https://form.typeform.com/to/t6XieXmB", "_blank");
     }
   };
 
@@ -189,7 +189,7 @@ export default function Portfolio() {
   ];
 
   const filteredItems = portfolioItems.filter(
-    (item) => item.category === activeCategory
+    (item) => item.category === activeCategory,
   );
 
   return (

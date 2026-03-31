@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Linkedin } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -63,25 +62,20 @@ export default function Footer() {
               >
                 conectaamarketing@gmail.com
               </a>
-              <a
-                href="https://wa.me/5551992091626"
-                className="hover:text-white transition-colors"
-              >
-                (51) 99209-1626
-              </a>
+
               {/* Social Links */}
               <div className="flex gap-4 mt-4">
                 <Link
                   href="https://instagram.com/equipeconecta"
                   className="hover:text-white/60 transition-colors"
                 >
-                  <Instagram size={24} />
+                  Instagram
                 </Link>
                 <Link
                   href="#"
                   className="hover:text-white/60 transition-colors"
                 >
-                  <Linkedin size={24} />
+                  Linkedin
                 </Link>
               </div>
             </div>
