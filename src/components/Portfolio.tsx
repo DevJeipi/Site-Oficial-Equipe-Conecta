@@ -104,7 +104,7 @@ const portfolioItems: PortfolioItem[] = [
 function PortfolioCard({ item }: { item: PortfolioItem }) {
   const handleClick = () => {
     if (item.category !== "branding") {
-      window.open("https://form.typeform.com/to/t6XieXmB", "_blank");
+      window.open("https://form.typeform.com/to/t6XieXmB");
     }
   };
 

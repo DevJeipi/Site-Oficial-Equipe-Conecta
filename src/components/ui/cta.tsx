@@ -22,7 +22,7 @@ const Button = ({
 
   const handleAction = () => {
     if (action === "whatsapp") {
-      window.open("https://form.typeform.com/to/t6XieXmB", "_blank");
+      window.open("https://form.typeform.com/to/t6XieXmB");
     } else if (action === "email") {
       window.open("mailto:contato@equipeconecta.com.br", "_blank");
     }
