@@ -44,6 +44,12 @@ export default function Footer() {
                 Portfólio
               </Link>
               <Link
+                href="#portfolio-audiovisual"
+                className="text-white/80 hover:text-white transition-colors"
+              >
+                Audiovisual
+              </Link>
+              <Link
                 href="#team"
                 className="text-white/80 hover:text-white transition-colors"
               >

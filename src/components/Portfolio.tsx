@@ -7,16 +7,16 @@ type FeedItem = {
 
 const feedItems: FeedItem[] = [
   {
-    name: "Fluence",
-    image: "/feed-fluence.webp",
+    name: "Celebrante JS",
+    image: "/feed-janete.png",
   },
   {
     name: "Bauer",
-    image: "/feed-bauer.webp",
+    image: "/feed-bauer.png",
   },
   {
     name: "O Pace",
-    image: "/feed-opace.webp",
+    image: "/feed-opace.png",
   },
 ];
 

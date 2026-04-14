@@ -1,12 +1,13 @@
-import { Header } from "@/components/header";
-import Hero from "@/components/Hero";
-import Mini from "@/components/Mini";
-import Services from "@/components/Services";
-import Method from "@/components/Method";
-import Portfolio from "@/components/Portfolio";
-import Why from "@/components/why";
-import Team from "@/components/Team";
+import AudiovisualPortfolio from "@/components/AudiovisualPortfolio";
 import Footer from "@/components/footer";
+import Hero from "@/components/Hero";
+import { Header } from "@/components/header";
+import Method from "@/components/Method";
+import Mini from "@/components/Mini";
+import Portfolio from "@/components/Portfolio";
+import Services from "@/components/Services";
+import Team from "@/components/Team";
+import Why from "@/components/why";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Method />
       <Portfolio />
+      <AudiovisualPortfolio />
       <Why />
       <Team />
       <Footer />
