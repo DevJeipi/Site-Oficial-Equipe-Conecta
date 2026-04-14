@@ -16,7 +16,7 @@ const feedItems: FeedItem[] = [
   },
   {
     name: "O Pace",
-    image: "/feed-opace.png",
+    image: "/opace-feed.svg",
   },
 ];
 
