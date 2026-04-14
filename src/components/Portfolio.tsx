@@ -8,11 +8,11 @@ type FeedItem = {
 const feedItems: FeedItem[] = [
   {
     name: "Celebrante JS",
-    image: "/feed-janete.png",
+    image: "/janete-feed.svg",
   },
   {
     name: "Bauer",
-    image: "/feed-bauer.png",
+    image: "/bauer-feed.svg",
   },
   {
     name: "O Pace",
