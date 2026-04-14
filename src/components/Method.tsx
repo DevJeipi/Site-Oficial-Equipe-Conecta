@@ -6,27 +6,27 @@ export default function Method() {
   const steps = [
     {
       step: "Passo 1",
-      title: "Análise aprofundada",
+      title: "Planejamento Estratégico",
       description:
-        "Estudamos seu negócio e necessidades para definir a melhor estratégia.",
+        "Definimos prioridades, direção e objetivos para orientar a execução.",
     },
     {
       step: "Passo 2",
-      title: "Planejamento estratégico",
+      title: "Captação Audiovisual",
       description:
-        "Traçamos um plano eficiente para posicionar sua marca e alcançar seus objetivos.",
+        "Produzimos os materiais visuais que dão força e consistência à campanha.",
     },
     {
       step: "Passo 3",
-      title: "Execução do planejado",
+      title: "Tráfego Pago",
       description:
-        "Colocamos a estratégia em prática, executando as ações de forma eficaz e dentro do cronograma.",
+        "Ativamos a distribuição com foco em alcance, leads e conversão.",
     },
     {
       step: "Passo 4",
-      title: "Monitoramento e análise",
+      title: "Entrega de Resultado Real",
       description:
-        "Acompanhamos o desempenho continuamente, ajustando estratégias conforme necessário para otimizar resultados.",
+        "Acompanhamos os dados e ajustamos a rota para gerar resultado de verdade.",
     },
   ];
 
@@ -85,7 +85,7 @@ export default function Method() {
           viewport={{ once: true }}
           className="text-5xl md:text-6xl font-unbounded font-bold text-center text-white mb-16"
         >
-          Método 360
+          Método Conexão Azul
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

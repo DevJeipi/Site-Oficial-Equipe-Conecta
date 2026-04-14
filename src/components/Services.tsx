@@ -31,17 +31,139 @@ export default function Services() {
           </h1>
           <h2 className="text-4xl font-bold">Encontre o que você precisa</h2>
         </div>
-        {/* Serviço 1 Tráfego Pago */}
+        {/* Serviço 1 Narrativa */}
         <div className="flex flex-col lg:flex-row w-full gap-7">
           <div className="flex w-full lg:w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
             <Castle size={48} />
-            <h2 className="text-4xl font-unbounded font-bold">
-              Marketing de Performance
-            </h2>
+            <h2 className="text-4xl font-unbounded font-bold">Narrativa</h2>
             <div className="w-2/3 h-0.25 bg-secondary"></div>
             <p>
-              Maximizamos seu investimento com estratégias ágeis e otimizadas
-              para gerar resultados reais.
+              Construímos uma base estratégica para orientar sua presença e
+              fortalecer sua mensagem.
+            </p>
+            <Button variant="text" action="whatsapp">
+              Converse conosco
+            </Button>
+          </div>
+          <ul className="flex flex-col gap-6 w-full lg:w-3/5">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
+              <ChartLine
+                className="flex-shrink-0 text-primary dark:text-secondary"
+                size={48}
+              />
+              <div>
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
+                  Diagnóstico Macro
+                </h3>
+                <p>
+                  Analisamos o cenário do negócio para identificar oportunidades
+                  e direcionar os próximos passos.
+                </p>
+              </div>
+            </li>
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
+              <Rocket
+                className="flex-shrink-0 text-primary dark:text-secondary"
+                size={48}
+              />
+              <div>
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
+                  Planejamento Estratégico
+                </h3>
+                <p>
+                  Estruturamos ações e prioridades para guiar a execução com
+                  clareza e consistência.
+                </p>
+              </div>
+            </li>
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
+              <Target
+                className="flex-shrink-0 text-primary dark:text-secondary"
+                size={48}
+              />
+              <div>
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
+                  Posicionamento de Marca
+                </h3>
+                <p>
+                  Definimos como sua marca deve se apresentar para gerar
+                  percepção, valor e conexão.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        {/* Serviço 2 Audiovisual */}
+        <div className="flex flex-col lg:flex-row w-full gap-7">
+          <div className="flex w-full lg:w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
+            <Layers size={48} />
+            <h2 className="text-4xl font-unbounded font-bold">Audiovisual</h2>
+            <div className="w-2/3 h-0.25 bg-secondary"></div>
+            <p>
+              Produzimos conteúdos que ampliam presença, reforçam imagem e criam
+              proximidade com o público.
+            </p>
+            <Button variant="text" action="whatsapp">
+              Converse conosco
+            </Button>
+          </div>
+          <ul className="flex flex-col gap-6 w-full lg:w-3/5">
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
+              <Camera
+                size={48}
+                className="flex-shrink-0 text-primary dark:text-secondary"
+              />
+              <div>
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
+                  Produção de Vídeo
+                </h3>
+                <p>
+                  Criamos vídeos com narrativa, ritmo e propósito para destacar
+                  sua marca.
+                </p>
+              </div>
+            </li>
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA]  dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
+              <Pencil
+                className="flex-shrink-0 text-primary dark:text-secondary"
+                size={48}
+              />
+              <div>
+                <h3 className="text-2xl font-unbounded font-bold text-primary  dark:text-secondary">
+                  Fotografia
+                </h3>
+                <p>
+                  Registramos imagens que reforçam posicionamento e elevam a
+                  percepção da sua marca.
+                </p>
+              </div>
+            </li>
+            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
+              <SwatchBook
+                className="flex-shrink-0 text-primary dark:text-secondary"
+                size={48}
+              />
+              <div>
+                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
+                  Identidade Visual
+                </h3>
+                <p>
+                  Construímos uma linguagem visual consistente para fortalecer
+                  sua marca em todos os pontos de contato.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        {/* Serviço 3 Resultado */}
+        <div className="flex flex-col lg:flex-row w-full gap-7">
+          <div className="flex w-full lg:w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
+            <ChartLine size={48} />
+            <h2 className="text-4xl font-unbounded font-bold">Resultado</h2>
+            <div className="w-2/3 h-0.25 bg-secondary"></div>
+            <p>
+              Ativamos a operação com foco em performance, acompanhamento e
+              crescimento comercial.
             </p>
             <Button variant="text" action="whatsapp">
               Converse conosco
@@ -58,9 +180,8 @@ export default function Services() {
                   Gestão de Tráfego Pago
                 </h3>
                 <p>
-                  Criamos campanhas estratégicas no Google Ads, Meta Ads e
-                  outras redes para alcançar o público certo e maximizar
-                  conversões.
+                  Criamos campanhas estratégicas para alcançar o público certo e
+                  maximizar conversões.
                 </p>
               </div>
             </li>
@@ -71,11 +192,11 @@ export default function Services() {
               />
               <div>
                 <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
-                  Growth Hacking
+                  Acompanhamento de Vendas
                 </h3>
                 <p>
-                  Aplicamos estratégias eficientes e testes rápidos para
-                  impulsionar o crescimento do seu negócio.
+                  Monitoramos o funil comercial para alinhar ações e melhorar a
+                  conversão.
                 </p>
               </div>
             </li>
@@ -86,82 +207,17 @@ export default function Services() {
               />
               <div>
                 <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
-                  Posicionamento Estratégico
+                  Relatórios de Performance
                 </h3>
                 <p>
-                  Definimos a melhor forma de apresentar sua marca no mercado
-                  para atrair e conectar o público certo.
+                  Entregamos análises claras para acompanhar resultados e
+                  orientar decisões.
                 </p>
               </div>
             </li>
           </ul>
         </div>
-        {/* Serviço 2 Design */}
-        <div className="flex flex-col lg:flex-row w-full gap-7">
-          <div className="flex w-full lg:w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
-            <Layers size={48} />
-            <h2 className="text-4xl font-unbounded font-bold">
-              Visual & Engajamento
-            </h2>
-            <div className="w-2/3 h-0.25 bg-secondary"></div>
-            <p>
-              Transmitimos sua essência com criatividade e estratégia, elevando
-              a percepção da sua marca.
-            </p>
-            <Button variant="text" action="whatsapp">
-              Converse conosco
-            </Button>
-          </div>
-          <ul className="flex flex-col gap-6 w-full lg:w-3/5">
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
-              <Camera
-                size={48}
-                className="flex-shrink-0 text-primary dark:text-secondary"
-              />
-              <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
-                  Captações Visuais
-                </h3>
-                <p>
-                  Captamos e editamos conteúdos visuais profissionais para
-                  fortalecer sua presença digital.
-                </p>
-              </div>
-            </li>
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA]  dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
-              <Pencil
-                className="flex-shrink-0 text-primary dark:text-secondary"
-                size={48}
-              />
-              <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary  dark:text-secondary">
-                  Criativos para Anúncios
-                </h3>
-                <p>
-                  Produzimos imagens e vídeos estratégicos para aumentar o
-                  impacto das suas campanhas.
-                </p>
-              </div>
-            </li>
-            <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
-              <SwatchBook
-                className="flex-shrink-0 text-primary dark:text-secondary"
-                size={48}
-              />
-              <div>
-                <h3 className="text-2xl font-unbounded font-bold text-primary dark:text-secondary">
-                  Criação de Identidade Visual
-                </h3>
-                <p>
-                  Desenvolvemos logotipos, paletas de cores, elementos visuais,
-                  apresentações, tipografia, conceito, tudo para fortalecer sua
-                  marca.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        {/* Serviço 3 Sites */}
+        {/* Serviço 4 Sites */}
         <div className="flex flex-col lg:flex-row w-full gap-7">
           <div className="flex w-full lg:w-2/5 flex-col text-center gap-4 items-center justify-center text-secondary bg-primary rounded-2xl py-22 px-20">
             <CodeXml size={48} />
