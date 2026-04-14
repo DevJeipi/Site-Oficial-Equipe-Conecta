@@ -1,5 +1,5 @@
-import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import Button from "@/components/ui/cta";
 
 export default function Hero() {
   return (
@@ -35,6 +35,8 @@ export default function Hero() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="w-full h-auto opacity-20"
+            aria-hidden="true"
+            focusable="false"
           >
             <path
               d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
@@ -98,14 +100,11 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Scroll Indicator */}
+        {/* CTA */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <div className="bg-neutral dark:bg-secondary p-2 rounded-full shadow-lg animate-bounce">
-            <ChevronDown
-              className="text-secondary dark:text-neutral w-8 h-8 md:w-12 md:h-12"
-              aria-hidden="true"
-            />
-          </div>
+          <Button variant="text" action="whatsapp">
+            Converse conosco
+          </Button>
         </div>
       </div>
     </section>
