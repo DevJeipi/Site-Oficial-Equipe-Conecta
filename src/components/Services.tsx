@@ -45,7 +45,7 @@ export default function Services() {
               Converse conosco
             </Button>
           </div>
-          <ul className="flex flex-col gap-6 w-full lg:w-3/5">
+          <ul className="hidden md:flex flex-col gap-6 w-full lg:w-3/5">
             <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <ChartLine
                 className="flex-shrink-0 text-primary dark:text-secondary"
@@ -107,7 +107,7 @@ export default function Services() {
               Converse conosco
             </Button>
           </div>
-          <ul className="flex flex-col gap-6 w-full lg:w-3/5">
+          <ul className="hidden md:flex flex-col gap-6 w-full lg:w-3/5">
             <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <Camera
                 size={48}
@@ -169,7 +169,7 @@ export default function Services() {
               Converse conosco
             </Button>
           </div>
-          <ul className="flex flex-col gap-6 w-full lg:w-3/5">
+          <ul className="hidden md:flex flex-col gap-6 w-full lg:w-3/5">
             <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <ChartLine
                 className="flex-shrink-0 text-primary dark:text-secondary"
@@ -233,7 +233,7 @@ export default function Services() {
               Converse conosco
             </Button>
           </div>
-          <ul className="flex flex-col gap-6 w-full lg:w-3/5">
+          <ul className="hidden md:flex flex-col gap-6 w-full lg:w-3/5">
             <li className="flex flex-col lg:flex-row items-center gap-6 bg-[#DDE1EA] dark:border-1 dark:border-secondary dark:bg-transparent p-9 rounded-2xl">
               <Laptop
                 className="flex-shrink-0 text-primary dark:text-secondary"

@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background Split */}
       <div className="absolute inset-0 flex overflow-hidden -z-10">
         <div className="w-full h-full md:w-1/2 bg-secondary dark:bg-neutral" />
-        <div className="relative w-1/2 md:block hidden">
+        <div className="relative w-full md:w-1/2 md:block">
           <Image
             src="/bg-waves-conecta-lp.webp"
             alt="Imagem de fundo com ondas"
@@ -70,7 +70,7 @@ export default function Hero() {
           <span className="inline-flex items-center justify-center text-secondary rounded-xl bg-gradient-to-r from-[#316DDB] to-primary p-4">
             Conexões
           </span>
-          <span className="flex items-end justify-end text-neutral dark:text-secondary">
+          <span className="flex items-end justify-end text-secondary md:text-neutral dark:text-secondary">
             Reais
           </span>
         </h1>
@@ -78,7 +78,7 @@ export default function Hero() {
         {/* Description Text */}
         <div className="absolute bottom-24 md:bottom-8 left-4 md:left-6 z-10 max-w-[90%] md:max-w-md">
           <p
-            className="text-sm md:text-base text-justify relative indent-10 
+            className="w-1/2 md:w-full text-sm md:text-base text-justify relative indent-10 
                        before:content-[''] before:absolute before:left-0 before:top-3
                        before:w-8 before:h-[2px] before:bg-primary dark:before:bg-secondary"
             style={{ contentVisibility: "auto" }}

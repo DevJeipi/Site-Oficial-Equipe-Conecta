@@ -19,7 +19,7 @@ const dmsans = DM_Sans({
 
 export const metadata: Metadata = {
   // Metadados básicos
-  title: "Marketing 360 | Equipe Conecta",
+  title: "Conecta | Marketing e Comunicação",
   description:
     "Conectamos sua marca ao sucesso com um marketing 360 humanizado. Da criação de sites e design ao tráfego pago, nossa equipe guia você. Fale com a gente!",
   keywords: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
 
   // --- Open Graph (Redes Sociais) ---
   openGraph: {
-    title: "Marketing 360 Humanizado | Equipe Conecta",
+    title: "Marketing e Comunicação Digital | Equipe Conecta",
     description:
       "Transformamos ideias em resultados com estratégias digitais completas.",
     url: "https://www.equipeconecta.com.br", // URL principal do seu site
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Equipe Conecta - Marketing 360",
+        alt: "Equipe Conecta - Marketing e Comunicação Digital",
       },
     ],
     locale: "pt_BR",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
   // --- Twitter Card ---
   twitter: {
     card: "summary_large_image",
-    title: "Marketing 360 | Equipe Conecta",
+    title: "Marketing e Comunicação Digital | Equipe Conecta",
     description:
       "Transformamos ideias em resultados com estratégias digitais completas.",
     images: ["/og-image.png"], // Mesma imagem do Open Graph
