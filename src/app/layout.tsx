@@ -2,6 +2,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Unbounded, DM_Sans } from "next/font/google";
 import { Metadata, Viewport } from "next";
+import Script from "next/script";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -117,6 +118,24 @@ export default function RootLayout({
         }}
         className={`${unbounded.variable} ${dmsans.variable} antialiased`}
       >
+        <Script
+          id="pixel-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3842552005964155');
+fbq('track', 'PageView');
+            `,
+          }}
+        />
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           {children}
         </ThemeProvider>
