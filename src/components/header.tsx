@@ -9,7 +9,7 @@ export function Header() {
       <div className="flex container rounded-4xl items-center justify-between h-16 sm:h-20 px-8">
         <Link href="/">
           <Image
-            src="/logo-conecta-wtbg-blue-logotext.webp"
+            src="/logo-conecta.avif"
             alt="Logo Equipe Conecta"
             width={160}
             height={24}
