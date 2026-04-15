@@ -102,7 +102,11 @@ export default function Hero() {
 
         {/* CTA */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <Button variant="text" action="whatsapp">
+          <Button
+            className="!w-full !mt-8 !rounded-md !text-xs md:!text-lg"
+            variant="text"
+            action="whatsapp"
+          >
             Converse conosco
           </Button>
         </div>
