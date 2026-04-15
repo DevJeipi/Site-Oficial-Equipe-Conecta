@@ -78,7 +78,7 @@ export default function Hero() {
         {/* Description Text */}
         <div className="absolute bottom-24 md:bottom-8 left-4 md:left-6 z-10 max-w-[90%] md:max-w-md">
           <p
-            className="w-1/2 md:w-full text-sm md:text-base text-justify relative indent-10 
+            className="w-1/2 md:w-full text-xs md:text-base text-justify relative indent-10 
                        before:content-[''] before:absolute before:left-0 before:top-3
                        before:w-8 before:h-[2px] before:bg-primary dark:before:bg-secondary"
             style={{ contentVisibility: "auto" }}
